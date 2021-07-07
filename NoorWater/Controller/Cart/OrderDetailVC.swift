@@ -52,7 +52,8 @@ class OrderDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             totalPric += product.price
         }
         
-//        sdsd
+//        HELLO
+        // ASFAND
         totalPrice.text = "AED " + totalPric.description
         total.text = "AED " + totalPric.description
         balanceDue.text =  "AED " + totalPric.description
