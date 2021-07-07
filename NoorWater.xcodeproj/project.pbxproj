@@ -1,0 +1,1157 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5811AA3A2674A36500459457 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811AA392674A36500459457 /* ProductDetailVC.swift */; };
+		5811AA3C2674C6F100459457 /* Screenshot 2021-06-12 at 3.40.59 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 5811AA3B2674C6F000459457 /* Screenshot 2021-06-12 at 3.40.59 PM.png */; };
+		5811AA3E267621ED00459457 /* GetOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811AA3D267621ED00459457 /* GetOrder.swift */; };
+		5811AA40267631E200459457 /* GetWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811AA3F267631E200459457 /* GetWallet.swift */; };
+		5811AA422676394200459457 /* GetAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811AA412676394200459457 /* GetAddress.swift */; };
+		5811AA442676501F00459457 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811AA432676501F00459457 /* ContactUsVC.swift */; };
+		5816ECE02687073F00A87A7B /* PlaceOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816ECDF2687073F00A87A7B /* PlaceOrderVC.swift */; };
+		5819B70F26600C4700C36E0C /* DropPinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819B70E26600C4700C36E0C /* DropPinVC.swift */; };
+		5819B71426600CA500C36E0C /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819B71326600CA500C36E0C /* Place.swift */; };
+		5819B71A26600D4500C36E0C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819B71926600D4500C36E0C /* Protocols.swift */; };
+		581F3DC726256E4600E49AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F3DC626256E4600E49AB7 /* AppDelegate.swift */; };
+		581F3DC926256E4600E49AB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F3DC826256E4600E49AB7 /* SceneDelegate.swift */; };
+		581F3DCE26256E4600E49AB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581F3DCC26256E4600E49AB7 /* Main.storyboard */; };
+		581F3DD026256E4700E49AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581F3DCF26256E4700E49AB7 /* Assets.xcassets */; };
+		581F3DD326256E4700E49AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581F3DD126256E4700E49AB7 /* LaunchScreen.storyboard */; };
+		581F3DDE26256E4700E49AB7 /* NoorWaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F3DDD26256E4700E49AB7 /* NoorWaterTests.swift */; };
+		581F3DE926256E4700E49AB7 /* NoorWaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F3DE826256E4700E49AB7 /* NoorWaterUITests.swift */; };
+		584163D4262601BA0090C212 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584163D3262601BA0090C212 /* UIViewControllerExt.swift */; };
+		584163DA2626020B0090C212 /* ZainSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 584163D92626020B0090C212 /* ZainSPM */; };
+		584163E02626024A0090C212 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 584163DF2626024A0090C212 /* IQKeyboardManagerSwift */; };
+		584163E6262602780090C212 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 584163E5262602780090C212 /* SDWebImage */; };
+		584163EB262602B70090C212 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584163EA262602B70090C212 /* StringExt.swift */; };
+		584163F1262602EF0090C212 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584163F0262602EF0090C212 /* Constant.swift */; };
+		584163F92626033A0090C212 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584163F82626033A0090C212 /* Profile.storyboard */; };
+		5841640126261CE00090C212 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5841640026261CE00090C212 /* LoginVC.swift */; };
+		5841640626261CF70090C212 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5841640526261CF70090C212 /* SignUpVC.swift */; };
+		58429DCC2653968300FD0FE2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58429DCB2653968300FD0FE2 /* UserModel.swift */; };
+		5848ED6226358095004C8F05 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848ED6126358095004C8F05 /* LaunchVC.swift */; };
+		5848ED6726358775004C8F05 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848ED6626358775004C8F05 /* OnBoardingVC.swift */; };
+		5848ED6C26359178004C8F05 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848ED6B26359178004C8F05 /* ForgotPasswordVC.swift */; };
+		5848ED7126359187004C8F05 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848ED7026359187004C8F05 /* ChangePasswordVC.swift */; };
+		58742FFC26308BB6002AF4F1 /* UpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58742FFB26308BB6002AF4F1 /* UpdateProfileVC.swift */; };
+		58743009263097D8002AF4F1 /* SavedAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58743008263097D8002AF4F1 /* SavedAddress.swift */; };
+		5874300E263097E8002AF4F1 /* AddNewAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874300D263097E8002AF4F1 /* AddNewAddressVC.swift */; };
+		5883A87F263D688A002AE6AC /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A87D263D688A002AE6AC /* CartCell.swift */; };
+		5883A880263D688A002AE6AC /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5883A87E263D688A002AE6AC /* CartCell.xib */; };
+		5883A88C263D6AF8002AE6AC /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A88B263D6AF8002AE6AC /* ShoppingCartVC.swift */; };
+		5883A891263D6B2B002AE6AC /* OrderReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A890263D6B2B002AE6AC /* OrderReviewVC.swift */; };
+		5883A896263D6B3F002AE6AC /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A895263D6B3F002AE6AC /* OrderVC.swift */; };
+		5883A89B263D6B53002AE6AC /* OrderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A89A263D6B53002AE6AC /* OrderDetailVC.swift */; };
+		5883A8A0263D6B69002AE6AC /* MyOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A89F263D6B69002AE6AC /* MyOrderVC.swift */; };
+		5883A8A5263D6B99002AE6AC /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A8A4263D6B99002AE6AC /* WalletVC.swift */; };
+		5883A8AA263D6BB5002AE6AC /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A8A9263D6BB5002AE6AC /* ProductVC.swift */; };
+		5883A8AF263D6C0B002AE6AC /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A8AE263D6C0B002AE6AC /* FeedbackVC.swift */; };
+		5883A8B4263D6C37002AE6AC /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A8B3263D6C37002AE6AC /* NotificationVC.swift */; };
+		58C85BCD266BB19D003844DE /* PlaceOrderCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C85BCB266BB19D003844DE /* PlaceOrderCartCell.swift */; };
+		58C85BCE266BB19D003844DE /* PlaceOrderCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C85BCC266BB19D003844DE /* PlaceOrderCartCell.xib */; };
+		58CCCF3D266B982200E1E2EC /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CCCF3B266B982200E1E2EC /* OrderCell.swift */; };
+		58CCCF3E266B982200E1E2EC /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CCCF3C266B982200E1E2EC /* OrderCell.xib */; };
+		58DC392E2662440000E31822 /* GetProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC392D2662440000E31822 /* GetProduct.swift */; };
+		58E49A502663946900A00B90 /* SelectionDaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E49A4F2663946900A00B90 /* SelectionDaysVC.swift */; };
+		58F4BF84265AA3260026B6EA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F4BF7F265AA3240026B6EA /* Reachability.swift */; };
+		58F4BF85265AA3260026B6EA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F4BF80265AA3250026B6EA /* Request.swift */; };
+		58F4BF86265AA3260026B6EA /* CombineHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F4BF81265AA3250026B6EA /* CombineHelper.swift */; };
+		58F4BF87265AA3260026B6EA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F4BF82265AA3250026B6EA /* Helper.swift */; };
+		58F4BF88265AA3260026B6EA /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F4BF83265AA3260026B6EA /* HTTPStatusCode.swift */; };
+		58F5818E26289CDF00132391 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5818D26289CDF00132391 /* DashboardVC.swift */; };
+		58F5819326289CF200132391 /* LeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5819226289CF200132391 /* LeftMenuVC.swift */; };
+		58F5819926289D3200132391 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5819826289D3200132391 /* ApiService.swift */; };
+		7200624C829648EA37C296D8 /* Pods_NoorWater_NoorWaterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA02AC0BD4CE97FA6C4EA0 /* Pods_NoorWater_NoorWaterUITests.framework */; };
+		AEF567F492B209FEBB0943E5 /* Pods_NoorWaterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0170418EA3C157DCC64659B /* Pods_NoorWaterTests.framework */; };
+		B2857FBBFB961DC6C77E22BC /* Pods_NoorWater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115E8C3A61E6993BED24D89A /* Pods_NoorWater.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		581F3DDA26256E4700E49AB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581F3DBB26256E4600E49AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 581F3DC226256E4600E49AB7;
+			remoteInfo = NoorWater;
+		};
+		581F3DE526256E4700E49AB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581F3DBB26256E4600E49AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 581F3DC226256E4600E49AB7;
+			remoteInfo = NoorWater;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C62593ABC1504DCEF415EE /* Pods-NoorWaterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoorWaterTests.release.xcconfig"; path = "Target Support Files/Pods-NoorWaterTests/Pods-NoorWaterTests.release.xcconfig"; sourceTree = "<group>"; };
+		115E8C3A61E6993BED24D89A /* Pods_NoorWater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoorWater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D28624F9381C5DE5433C9F /* Pods-NoorWater-NoorWaterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoorWater-NoorWaterUITests.release.xcconfig"; path = "Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54BA02AC0BD4CE97FA6C4EA0 /* Pods_NoorWater_NoorWaterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoorWater_NoorWaterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5811AA392674A36500459457 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
+		5811AA3B2674C6F000459457 /* Screenshot 2021-06-12 at 3.40.59 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2021-06-12 at 3.40.59 PM.png"; sourceTree = "<group>"; };
+		5811AA3D267621ED00459457 /* GetOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrder.swift; sourceTree = "<group>"; };
+		5811AA3F267631E200459457 /* GetWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWallet.swift; sourceTree = "<group>"; };
+		5811AA412676394200459457 /* GetAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAddress.swift; sourceTree = "<group>"; };
+		5811AA432676501F00459457 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		5816ECDF2687073F00A87A7B /* PlaceOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderVC.swift; sourceTree = "<group>"; };
+		5819B70E26600C4700C36E0C /* DropPinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropPinVC.swift; sourceTree = "<group>"; };
+		5819B71326600CA500C36E0C /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		5819B71926600D4500C36E0C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		581F3DC326256E4600E49AB7 /* NoorWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoorWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		581F3DC626256E4600E49AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		581F3DC826256E4600E49AB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		581F3DCD26256E4600E49AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		581F3DCF26256E4700E49AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		581F3DD226256E4700E49AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		581F3DD426256E4700E49AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581F3DD926256E4700E49AB7 /* NoorWaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoorWaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		581F3DDD26256E4700E49AB7 /* NoorWaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoorWaterTests.swift; sourceTree = "<group>"; };
+		581F3DDF26256E4700E49AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581F3DE426256E4700E49AB7 /* NoorWaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoorWaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		581F3DE826256E4700E49AB7 /* NoorWaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoorWaterUITests.swift; sourceTree = "<group>"; };
+		581F3DEA26256E4700E49AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5837E29F266755FE00BCEABF /* NoorWater.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoorWater.entitlements; sourceTree = "<group>"; };
+		584163D3262601BA0090C212 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		584163EA262602B70090C212 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		584163F0262602EF0090C212 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		584163F82626033A0090C212 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		5841640026261CE00090C212 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5841640526261CF70090C212 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		58429DCB2653968300FD0FE2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		5848ED6126358095004C8F05 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		5848ED6626358775004C8F05 /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
+		5848ED6B26359178004C8F05 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		5848ED7026359187004C8F05 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		58742FFB26308BB6002AF4F1 /* UpdateProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileVC.swift; sourceTree = "<group>"; };
+		58743008263097D8002AF4F1 /* SavedAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedAddress.swift; sourceTree = "<group>"; };
+		5874300D263097E8002AF4F1 /* AddNewAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAddressVC.swift; sourceTree = "<group>"; };
+		5883A87D263D688A002AE6AC /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		5883A87E263D688A002AE6AC /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
+		5883A88B263D6AF8002AE6AC /* ShoppingCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartVC.swift; sourceTree = "<group>"; };
+		5883A890263D6B2B002AE6AC /* OrderReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderReviewVC.swift; sourceTree = "<group>"; };
+		5883A895263D6B3F002AE6AC /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		5883A89A263D6B53002AE6AC /* OrderDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailVC.swift; sourceTree = "<group>"; };
+		5883A89F263D6B69002AE6AC /* MyOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderVC.swift; sourceTree = "<group>"; };
+		5883A8A4263D6B99002AE6AC /* WalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
+		5883A8A9263D6BB5002AE6AC /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		5883A8AE263D6C0B002AE6AC /* FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
+		5883A8B3263D6C37002AE6AC /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		58C85BCB266BB19D003844DE /* PlaceOrderCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderCartCell.swift; sourceTree = "<group>"; };
+		58C85BCC266BB19D003844DE /* PlaceOrderCartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderCartCell.xib; sourceTree = "<group>"; };
+		58CCCF3B266B982200E1E2EC /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		58CCCF3C266B982200E1E2EC /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		58DC392D2662440000E31822 /* GetProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProduct.swift; sourceTree = "<group>"; };
+		58E49A4F2663946900A00B90 /* SelectionDaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionDaysVC.swift; sourceTree = "<group>"; };
+		58F4BF7F265AA3240026B6EA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		58F4BF80265AA3250026B6EA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		58F4BF81265AA3250026B6EA /* CombineHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineHelper.swift; sourceTree = "<group>"; };
+		58F4BF82265AA3250026B6EA /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		58F4BF83265AA3260026B6EA /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		58F5818D26289CDF00132391 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		58F5819226289CF200132391 /* LeftMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuVC.swift; sourceTree = "<group>"; };
+		58F5819826289D3200132391 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		999F800C8B09B38A2397CF99 /* Pods-NoorWaterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoorWaterTests.debug.xcconfig"; path = "Target Support Files/Pods-NoorWaterTests/Pods-NoorWaterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0170418EA3C157DCC64659B /* Pods_NoorWaterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoorWaterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AE959EA40BB3AC817FEFF6 /* Pods-NoorWater-NoorWaterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoorWater-NoorWaterUITests.debug.xcconfig"; path = "Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4A2F64052C6EDB9C8008A2B /* Pods-NoorWater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoorWater.debug.xcconfig"; path = "Target Support Files/Pods-NoorWater/Pods-NoorWater.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0705120B980BE743587ED5 /* Pods-NoorWater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoorWater.release.xcconfig"; path = "Target Support Files/Pods-NoorWater/Pods-NoorWater.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		581F3DC026256E4600E49AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584163E6262602780090C212 /* SDWebImage in Frameworks */,
+				584163DA2626020B0090C212 /* ZainSPM in Frameworks */,
+				584163E02626024A0090C212 /* IQKeyboardManagerSwift in Frameworks */,
+				B2857FBBFB961DC6C77E22BC /* Pods_NoorWater.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		581F3DD626256E4700E49AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF567F492B209FEBB0943E5 /* Pods_NoorWaterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		581F3DE126256E4700E49AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7200624C829648EA37C296D8 /* Pods_NoorWater_NoorWaterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39D653CDBE4225E309732CBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4A2F64052C6EDB9C8008A2B /* Pods-NoorWater.debug.xcconfig */,
+				EE0705120B980BE743587ED5 /* Pods-NoorWater.release.xcconfig */,
+				B6AE959EA40BB3AC817FEFF6 /* Pods-NoorWater-NoorWaterUITests.debug.xcconfig */,
+				19D28624F9381C5DE5433C9F /* Pods-NoorWater-NoorWaterUITests.release.xcconfig */,
+				999F800C8B09B38A2397CF99 /* Pods-NoorWaterTests.debug.xcconfig */,
+				00C62593ABC1504DCEF415EE /* Pods-NoorWaterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5819B71826600D3700C36E0C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5819B71926600D4500C36E0C /* Protocols.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		581F3DBA26256E4600E49AB7 = {
+			isa = PBXGroup;
+			children = (
+				581F3DC526256E4600E49AB7 /* NoorWater */,
+				581F3DDC26256E4700E49AB7 /* NoorWaterTests */,
+				581F3DE726256E4700E49AB7 /* NoorWaterUITests */,
+				581F3DC426256E4600E49AB7 /* Products */,
+				39D653CDBE4225E309732CBC /* Pods */,
+				8CF82E03EC043EB4F5F1BB77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		581F3DC426256E4600E49AB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				581F3DC326256E4600E49AB7 /* NoorWater.app */,
+				581F3DD926256E4700E49AB7 /* NoorWaterTests.xctest */,
+				581F3DE426256E4700E49AB7 /* NoorWaterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		581F3DC526256E4600E49AB7 /* NoorWater */ = {
+			isa = PBXGroup;
+			children = (
+				5837E29F266755FE00BCEABF /* NoorWater.entitlements */,
+				5819B71826600D3700C36E0C /* Delegate */,
+				58429DB72653926000FD0FE2 /* ApiCall */,
+				5883A87C263D6870002AE6AC /* Xib */,
+				58F5819726289D1E00132391 /* ApiService */,
+				584163EF262602DF0090C212 /* Constant */,
+				584163CF262601240090C212 /* Extension */,
+				584163CB262601030090C212 /* Controller */,
+				584163CA262600FC0090C212 /* View */,
+				584163C9262600F30090C212 /* Model */,
+				584163C8262600EB0090C212 /* StoryBoards */,
+				581F3DC626256E4600E49AB7 /* AppDelegate.swift */,
+				581F3DC826256E4600E49AB7 /* SceneDelegate.swift */,
+				5811AA3B2674C6F000459457 /* Screenshot 2021-06-12 at 3.40.59 PM.png */,
+				581F3DCF26256E4700E49AB7 /* Assets.xcassets */,
+				581F3DD126256E4700E49AB7 /* LaunchScreen.storyboard */,
+				581F3DD426256E4700E49AB7 /* Info.plist */,
+			);
+			path = NoorWater;
+			sourceTree = "<group>";
+		};
+		581F3DDC26256E4700E49AB7 /* NoorWaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				581F3DDD26256E4700E49AB7 /* NoorWaterTests.swift */,
+				581F3DDF26256E4700E49AB7 /* Info.plist */,
+			);
+			path = NoorWaterTests;
+			sourceTree = "<group>";
+		};
+		581F3DE726256E4700E49AB7 /* NoorWaterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				581F3DE826256E4700E49AB7 /* NoorWaterUITests.swift */,
+				581F3DEA26256E4700E49AB7 /* Info.plist */,
+			);
+			path = NoorWaterUITests;
+			sourceTree = "<group>";
+		};
+		584163C8262600EB0090C212 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				581F3DCC26256E4600E49AB7 /* Main.storyboard */,
+				584163F82626033A0090C212 /* Profile.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		584163C9262600F30090C212 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58429DCB2653968300FD0FE2 /* UserModel.swift */,
+				5819B71326600CA500C36E0C /* Place.swift */,
+				58DC392D2662440000E31822 /* GetProduct.swift */,
+				5811AA3D267621ED00459457 /* GetOrder.swift */,
+				5811AA3F267631E200459457 /* GetWallet.swift */,
+				5811AA412676394200459457 /* GetAddress.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		584163CA262600FC0090C212 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		584163CB262601030090C212 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5883A88A263D6AD9002AE6AC /* Address */,
+				5883A889263D6ACC002AE6AC /* Dashboard */,
+				5883A888263D6AAD002AE6AC /* Profile */,
+				5883A887263D6AA2002AE6AC /* Cart */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		584163CF262601240090C212 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				584163EA262602B70090C212 /* StringExt.swift */,
+				584163D3262601BA0090C212 /* UIViewControllerExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		584163EF262602DF0090C212 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				584163F0262602EF0090C212 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		58429DB72653926000FD0FE2 /* ApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				58F4BF81265AA3250026B6EA /* CombineHelper.swift */,
+				58F4BF82265AA3250026B6EA /* Helper.swift */,
+				58F4BF83265AA3260026B6EA /* HTTPStatusCode.swift */,
+				58F4BF7F265AA3240026B6EA /* Reachability.swift */,
+				58F4BF80265AA3250026B6EA /* Request.swift */,
+			);
+			path = ApiCall;
+			sourceTree = "<group>";
+		};
+		5883A87C263D6870002AE6AC /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				5883A87D263D688A002AE6AC /* CartCell.swift */,
+				5883A87E263D688A002AE6AC /* CartCell.xib */,
+				58CCCF3B266B982200E1E2EC /* OrderCell.swift */,
+				58CCCF3C266B982200E1E2EC /* OrderCell.xib */,
+				58C85BCB266BB19D003844DE /* PlaceOrderCartCell.swift */,
+				58C85BCC266BB19D003844DE /* PlaceOrderCartCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		5883A887263D6AA2002AE6AC /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				5883A88B263D6AF8002AE6AC /* ShoppingCartVC.swift */,
+				5883A890263D6B2B002AE6AC /* OrderReviewVC.swift */,
+				5883A895263D6B3F002AE6AC /* OrderVC.swift */,
+				5883A89A263D6B53002AE6AC /* OrderDetailVC.swift */,
+				5883A89F263D6B69002AE6AC /* MyOrderVC.swift */,
+				5883A8A9263D6BB5002AE6AC /* ProductVC.swift */,
+				5816ECDF2687073F00A87A7B /* PlaceOrderVC.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		5883A888263D6AAD002AE6AC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5848ED6126358095004C8F05 /* LaunchVC.swift */,
+				5841640026261CE00090C212 /* LoginVC.swift */,
+				5848ED6B26359178004C8F05 /* ForgotPasswordVC.swift */,
+				5848ED7026359187004C8F05 /* ChangePasswordVC.swift */,
+				5841640526261CF70090C212 /* SignUpVC.swift */,
+				5848ED6626358775004C8F05 /* OnBoardingVC.swift */,
+				58742FFB26308BB6002AF4F1 /* UpdateProfileVC.swift */,
+				5819B70E26600C4700C36E0C /* DropPinVC.swift */,
+				58E49A4F2663946900A00B90 /* SelectionDaysVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5883A889263D6ACC002AE6AC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				58F5818D26289CDF00132391 /* DashboardVC.swift */,
+				58F5819226289CF200132391 /* LeftMenuVC.swift */,
+				5883A8A4263D6B99002AE6AC /* WalletVC.swift */,
+				5883A8AE263D6C0B002AE6AC /* FeedbackVC.swift */,
+				5883A8B3263D6C37002AE6AC /* NotificationVC.swift */,
+				5811AA392674A36500459457 /* ProductDetailVC.swift */,
+				5811AA432676501F00459457 /* ContactUsVC.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		5883A88A263D6AD9002AE6AC /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				58743008263097D8002AF4F1 /* SavedAddress.swift */,
+				5874300D263097E8002AF4F1 /* AddNewAddressVC.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		58F5819726289D1E00132391 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				58F5819826289D3200132391 /* ApiService.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		8CF82E03EC043EB4F5F1BB77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				115E8C3A61E6993BED24D89A /* Pods_NoorWater.framework */,
+				54BA02AC0BD4CE97FA6C4EA0 /* Pods_NoorWater_NoorWaterUITests.framework */,
+				A0170418EA3C157DCC64659B /* Pods_NoorWaterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		581F3DC226256E4600E49AB7 /* NoorWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581F3DED26256E4700E49AB7 /* Build configuration list for PBXNativeTarget "NoorWater" */;
+			buildPhases = (
+				2F9FAAA4AC63BE6FACDCE3BD /* [CP] Check Pods Manifest.lock */,
+				581F3DBF26256E4600E49AB7 /* Sources */,
+				581F3DC026256E4600E49AB7 /* Frameworks */,
+				581F3DC126256E4600E49AB7 /* Resources */,
+				0EC7A62E88C520D920128B3E /* [CP] Embed Pods Frameworks */,
+				89056411EB67E99F371B0726 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoorWater;
+			packageProductDependencies = (
+				584163D92626020B0090C212 /* ZainSPM */,
+				584163DF2626024A0090C212 /* IQKeyboardManagerSwift */,
+				584163E5262602780090C212 /* SDWebImage */,
+			);
+			productName = NoorWater;
+			productReference = 581F3DC326256E4600E49AB7 /* NoorWater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		581F3DD826256E4700E49AB7 /* NoorWaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581F3DF026256E4700E49AB7 /* Build configuration list for PBXNativeTarget "NoorWaterTests" */;
+			buildPhases = (
+				333DE1FA40B0598F53306C44 /* [CP] Check Pods Manifest.lock */,
+				581F3DD526256E4700E49AB7 /* Sources */,
+				581F3DD626256E4700E49AB7 /* Frameworks */,
+				581F3DD726256E4700E49AB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				581F3DDB26256E4700E49AB7 /* PBXTargetDependency */,
+			);
+			name = NoorWaterTests;
+			productName = NoorWaterTests;
+			productReference = 581F3DD926256E4700E49AB7 /* NoorWaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		581F3DE326256E4700E49AB7 /* NoorWaterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581F3DF326256E4700E49AB7 /* Build configuration list for PBXNativeTarget "NoorWaterUITests" */;
+			buildPhases = (
+				F312BDDEB43798D8A1531AB4 /* [CP] Check Pods Manifest.lock */,
+				581F3DE026256E4700E49AB7 /* Sources */,
+				581F3DE126256E4700E49AB7 /* Frameworks */,
+				581F3DE226256E4700E49AB7 /* Resources */,
+				895D3D93A8FA51ADF408355D /* [CP] Embed Pods Frameworks */,
+				00B4E24BB92F1DFA535584F5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				581F3DE626256E4700E49AB7 /* PBXTargetDependency */,
+			);
+			name = NoorWaterUITests;
+			productName = NoorWaterUITests;
+			productReference = 581F3DE426256E4700E49AB7 /* NoorWaterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		581F3DBB26256E4600E49AB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					581F3DC226256E4600E49AB7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					581F3DD826256E4700E49AB7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 581F3DC226256E4600E49AB7;
+					};
+					581F3DE326256E4700E49AB7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 581F3DC226256E4600E49AB7;
+					};
+				};
+			};
+			buildConfigurationList = 581F3DBE26256E4600E49AB7 /* Build configuration list for PBXProject "NoorWater" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 581F3DBA26256E4600E49AB7;
+			packageReferences = (
+				584163D82626020B0090C212 /* XCRemoteSwiftPackageReference "ZainSPM" */,
+				584163DE2626024A0090C212 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				584163E4262602780090C212 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 581F3DC426256E4600E49AB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				581F3DC226256E4600E49AB7 /* NoorWater */,
+				581F3DD826256E4700E49AB7 /* NoorWaterTests */,
+				581F3DE326256E4700E49AB7 /* NoorWaterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		581F3DC126256E4600E49AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581F3DD326256E4700E49AB7 /* LaunchScreen.storyboard in Resources */,
+				5883A880263D688A002AE6AC /* CartCell.xib in Resources */,
+				58CCCF3E266B982200E1E2EC /* OrderCell.xib in Resources */,
+				5811AA3C2674C6F100459457 /* Screenshot 2021-06-12 at 3.40.59 PM.png in Resources */,
+				58C85BCE266BB19D003844DE /* PlaceOrderCartCell.xib in Resources */,
+				581F3DD026256E4700E49AB7 /* Assets.xcassets in Resources */,
+				584163F92626033A0090C212 /* Profile.storyboard in Resources */,
+				581F3DCE26256E4600E49AB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		581F3DD726256E4700E49AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		581F3DE226256E4700E49AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B4E24BB92F1DFA535584F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EC7A62E88C520D920128B3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater/Pods-NoorWater-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater/Pods-NoorWater-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoorWater/Pods-NoorWater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F9FAAA4AC63BE6FACDCE3BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoorWater-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		333DE1FA40B0598F53306C44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoorWaterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89056411EB67E99F371B0726 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater/Pods-NoorWater-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater/Pods-NoorWater-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoorWater/Pods-NoorWater-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		895D3D93A8FA51ADF408355D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoorWater-NoorWaterUITests/Pods-NoorWater-NoorWaterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F312BDDEB43798D8A1531AB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoorWater-NoorWaterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		581F3DBF26256E4600E49AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E49A502663946900A00B90 /* SelectionDaysVC.swift in Sources */,
+				58742FFC26308BB6002AF4F1 /* UpdateProfileVC.swift in Sources */,
+				5883A8B4263D6C37002AE6AC /* NotificationVC.swift in Sources */,
+				5841640626261CF70090C212 /* SignUpVC.swift in Sources */,
+				5811AA40267631E200459457 /* GetWallet.swift in Sources */,
+				5819B71A26600D4500C36E0C /* Protocols.swift in Sources */,
+				58F4BF86265AA3260026B6EA /* CombineHelper.swift in Sources */,
+				581F3DC726256E4600E49AB7 /* AppDelegate.swift in Sources */,
+				5819B70F26600C4700C36E0C /* DropPinVC.swift in Sources */,
+				5848ED6226358095004C8F05 /* LaunchVC.swift in Sources */,
+				5848ED7126359187004C8F05 /* ChangePasswordVC.swift in Sources */,
+				58F4BF87265AA3260026B6EA /* Helper.swift in Sources */,
+				5883A891263D6B2B002AE6AC /* OrderReviewVC.swift in Sources */,
+				58F4BF85265AA3260026B6EA /* Request.swift in Sources */,
+				5811AA442676501F00459457 /* ContactUsVC.swift in Sources */,
+				58F4BF84265AA3260026B6EA /* Reachability.swift in Sources */,
+				5883A89B263D6B53002AE6AC /* OrderDetailVC.swift in Sources */,
+				58429DCC2653968300FD0FE2 /* UserModel.swift in Sources */,
+				581F3DC926256E4600E49AB7 /* SceneDelegate.swift in Sources */,
+				5883A896263D6B3F002AE6AC /* OrderVC.swift in Sources */,
+				5883A8A0263D6B69002AE6AC /* MyOrderVC.swift in Sources */,
+				58CCCF3D266B982200E1E2EC /* OrderCell.swift in Sources */,
+				5883A88C263D6AF8002AE6AC /* ShoppingCartVC.swift in Sources */,
+				5841640126261CE00090C212 /* LoginVC.swift in Sources */,
+				5819B71426600CA500C36E0C /* Place.swift in Sources */,
+				58DC392E2662440000E31822 /* GetProduct.swift in Sources */,
+				5883A87F263D688A002AE6AC /* CartCell.swift in Sources */,
+				5883A8AA263D6BB5002AE6AC /* ProductVC.swift in Sources */,
+				584163F1262602EF0090C212 /* Constant.swift in Sources */,
+				58F5818E26289CDF00132391 /* DashboardVC.swift in Sources */,
+				5811AA422676394200459457 /* GetAddress.swift in Sources */,
+				58F5819926289D3200132391 /* ApiService.swift in Sources */,
+				5883A8AF263D6C0B002AE6AC /* FeedbackVC.swift in Sources */,
+				584163EB262602B70090C212 /* StringExt.swift in Sources */,
+				584163D4262601BA0090C212 /* UIViewControllerExt.swift in Sources */,
+				58743009263097D8002AF4F1 /* SavedAddress.swift in Sources */,
+				5883A8A5263D6B99002AE6AC /* WalletVC.swift in Sources */,
+				5811AA3A2674A36500459457 /* ProductDetailVC.swift in Sources */,
+				5811AA3E267621ED00459457 /* GetOrder.swift in Sources */,
+				58F5819326289CF200132391 /* LeftMenuVC.swift in Sources */,
+				5874300E263097E8002AF4F1 /* AddNewAddressVC.swift in Sources */,
+				58F4BF88265AA3260026B6EA /* HTTPStatusCode.swift in Sources */,
+				5848ED6C26359178004C8F05 /* ForgotPasswordVC.swift in Sources */,
+				58C85BCD266BB19D003844DE /* PlaceOrderCartCell.swift in Sources */,
+				5848ED6726358775004C8F05 /* OnBoardingVC.swift in Sources */,
+				5816ECE02687073F00A87A7B /* PlaceOrderVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		581F3DD526256E4700E49AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581F3DDE26256E4700E49AB7 /* NoorWaterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		581F3DE026256E4700E49AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581F3DE926256E4700E49AB7 /* NoorWaterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		581F3DDB26256E4700E49AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 581F3DC226256E4600E49AB7 /* NoorWater */;
+			targetProxy = 581F3DDA26256E4700E49AB7 /* PBXContainerItemProxy */;
+		};
+		581F3DE626256E4700E49AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 581F3DC226256E4600E49AB7 /* NoorWater */;
+			targetProxy = 581F3DE526256E4700E49AB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		581F3DCC26256E4600E49AB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				581F3DCD26256E4600E49AB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		581F3DD126256E4700E49AB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				581F3DD226256E4700E49AB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		581F3DEB26256E4700E49AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		581F3DEC26256E4700E49AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		581F3DEE26256E4700E49AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A2F64052C6EDB9C8008A2B /* Pods-NoorWater.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoorWater/NoorWater.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = C7VR6LSR7Q;
+				INFOPLIST_FILE = NoorWater/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noor.water;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		581F3DEF26256E4700E49AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE0705120B980BE743587ED5 /* Pods-NoorWater.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoorWater/NoorWater.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = C7VR6LSR7Q;
+				INFOPLIST_FILE = NoorWater/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noor.water;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		581F3DF126256E4700E49AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 999F800C8B09B38A2397CF99 /* Pods-NoorWaterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoorWaterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hi5.noorwater.NoorWaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoorWater.app/NoorWater";
+			};
+			name = Debug;
+		};
+		581F3DF226256E4700E49AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C62593ABC1504DCEF415EE /* Pods-NoorWaterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoorWaterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hi5.noorwater.NoorWaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoorWater.app/NoorWater";
+			};
+			name = Release;
+		};
+		581F3DF426256E4700E49AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AE959EA40BB3AC817FEFF6 /* Pods-NoorWater-NoorWaterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoorWaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hi5.noorwater.NoorWaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoorWater;
+			};
+			name = Debug;
+		};
+		581F3DF526256E4700E49AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D28624F9381C5DE5433C9F /* Pods-NoorWater-NoorWaterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoorWaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hi5.noorwater.NoorWaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoorWater;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		581F3DBE26256E4600E49AB7 /* Build configuration list for PBXProject "NoorWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581F3DEB26256E4700E49AB7 /* Debug */,
+				581F3DEC26256E4700E49AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		581F3DED26256E4700E49AB7 /* Build configuration list for PBXNativeTarget "NoorWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581F3DEE26256E4700E49AB7 /* Debug */,
+				581F3DEF26256E4700E49AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		581F3DF026256E4700E49AB7 /* Build configuration list for PBXNativeTarget "NoorWaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581F3DF126256E4700E49AB7 /* Debug */,
+				581F3DF226256E4700E49AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		581F3DF326256E4700E49AB7 /* Build configuration list for PBXNativeTarget "NoorWaterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581F3DF426256E4700E49AB7 /* Debug */,
+				581F3DF526256E4700E49AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		584163D82626020B0090C212 /* XCRemoteSwiftPackageReference "ZainSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zainanjum100/ZainSPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		584163DE2626024A0090C212 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+		584163E4262602780090C212 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		584163D92626020B0090C212 /* ZainSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584163D82626020B0090C212 /* XCRemoteSwiftPackageReference "ZainSPM" */;
+			productName = ZainSPM;
+		};
+		584163DF2626024A0090C212 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584163DE2626024A0090C212 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		584163E5262602780090C212 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584163E4262602780090C212 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 581F3DBB26256E4600E49AB7 /* Project object */;
+}

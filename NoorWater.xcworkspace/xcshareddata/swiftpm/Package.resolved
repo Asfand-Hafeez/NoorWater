@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager",
+        "state": {
+          "branch": null,
+          "revision": "4dc6bc7d1c9747bd0c261c8c055903f9fdef91f7",
+          "version": "6.5.6"
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "d1c75d839709b3f91c82ecf7d3c7665272090456",
+          "version": "5.11.0"
+        }
+      },
+      {
+        "package": "ZainSPM",
+        "repositoryURL": "https://github.com/zainanjum100/ZainSPM.git",
+        "state": {
+          "branch": null,
+          "revision": "cd0b7fac9836f7beb335277ead833bb965993297",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
