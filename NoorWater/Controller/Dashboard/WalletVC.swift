@@ -100,9 +100,9 @@ class WalletCell: UITableViewCell {
             quantityLbl.text = result.day
             priceLbl.text = "AED " + result.amount
             if result.type == "C" {
-                iconImg.image = #imageLiteral(resourceName: "up")
+                iconImg.image = #imageLiteral(resourceName: "wallet1")
             }else {
-                iconImg.image = #imageLiteral(resourceName: "Wallet-Expnses-24x24")
+                iconImg.image = #imageLiteral(resourceName: "wallet2")
             }
         }
     

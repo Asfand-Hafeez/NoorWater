@@ -115,13 +115,13 @@ class DashboardVC: UIViewController, PushViewDelegate {
         nofityBtn.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         bellBtn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         
-        bellBtn.setImage(UIImage(named: "bell"), for: .normal)
-        if ApiService.instance.cartQuantity.count == 0 {
+        bellBtn.setImage(UIImage(named: "notification"), for: .normal)
+//        if ApiService.instance.cartQuantity.count == 0 {
             
-            nofityBtn.setImage(UIImage(named: "shopping-cart1"), for: .normal)
-        }else {
             nofityBtn.setImage(UIImage(named: "shopping-cart"), for: .normal)
-        }
+//        }else {
+//            nofityBtn.setImage(UIImage(named: "shopping-cart"), for: .normal)
+//        }
         
         nofityBtn.addTarget(self, action: #selector(cartBtnTapped), for: .touchUpInside)
         
@@ -192,12 +192,12 @@ class DashboardVC: UIViewController, PushViewDelegate {
             let vc =  FeedbackVC.instantiate(type: .main)
             pushVC(vc)
             
-        case 9:
+        case 7:
             let vc =  ContactUsVC.instantiate(type: .main)
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
             
-        case 10:
+        case 8:
             
             ApiService.instance.resetDefaults()
             ApiService.instance.setLoginRootVC()

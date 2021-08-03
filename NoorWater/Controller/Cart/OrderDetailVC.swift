@@ -16,6 +16,7 @@ class OrderDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var orderNoLbl: UILabel!
+    @IBOutlet weak var orderBtn: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -35,6 +36,16 @@ class OrderDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         guard let order = orderDetail else { return  }
         
         
+        
+        if order.status == "Deliverd" {
+            orderBtn.isHidden = false
+            orderBtn.setTitle("Re order", for: .normal)
+        }else if order.status == "Cancel" {
+            orderBtn.isHidden = false
+            orderBtn.setTitle("Restore", for: .normal)
+        }else {
+            orderBtn.isHidden = true
+        }
         orderNoLbl.text = "Order No. \(order.orderNum)"
         dateLbl.text = order.orderDateTime
         orderStatus.text = order.status
@@ -54,6 +65,12 @@ class OrderDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
 //        HELLO
         // ASFAND
+        
+        
+        
+        
+        
+        
         totalPrice.text = "AED " + totalPric.description
         total.text = "AED " + totalPric.description
         balanceDue.text =  "AED " + totalPric.description
@@ -64,14 +81,37 @@ class OrderDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         guard let product = orderDetail else {
             return
         }
-//        let cart =  product.products.first
-//        ApiService.instance.cartQuantity.append(CartQuantity(cart: ResultData(id: cart!.id, productId: <#T##String#>, name: <#T##String#>, price: <#T##String#>, unit: <#T##String#>, image: <#T##String#>), quantity: product.products.first!.qty))
+        for (i,v) in product.products.enumerated() {
+            ApiService.instance.cartQuantity.append(CartQuantity(cart: ResultData(id: i.description, productId: v.id.description, name: v.name, price: v.price.description, unit: "0", image: v.image), quantity: v.qty))
+        }
         
+        
+//
         let vc  = ShoppingCartVC.instantiate(type: .main)
         pushVC(vc)
     }
     
     
+    @IBAction func chatBtnTapped(_ sender: Any) {
+        self.openWhatsapp(whatsAppUrl: "https://api.whatsapp.com/send?phone=+971551984504")
+    }
+    func openWhatsapp(whatsAppUrl: String){
+        if let urlString = whatsAppUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed){
+            if let whatsappURL = URL(string: urlString) {
+                if UIApplication.shared.canOpenURL(whatsappURL){
+                    if #available(iOS 10.0, *) {
+                        UIApplication.shared.open(whatsappURL, options: [:], completionHandler: nil)
+                    } else {
+                        UIApplication.shared.openURL(whatsappURL)
+                    }
+                }
+                else {
+                    print("Install Whatsapp")
+                }
+            }
+        }
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orderDetail?.products.count ?? 0
     }

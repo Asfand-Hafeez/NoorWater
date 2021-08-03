@@ -44,6 +44,12 @@ class PlaceOrderVC: UIViewController , UITextViewDelegate , Location{
             totalPriceLbl.text = "AED " +  val.description
         }
         height.constant = CGFloat(cart.count * 100) + 50.0
+        
+        if let userAddress = ApiService.instance.user?.customerAddress {
+            selectedLoc = ItemLocation(name: userAddress.address, longName: userAddress.address, lat: userAddress.lat.toDouble(), long: userAddress.lng.toDouble(), placeId: userAddress.addressId)
+            isValidAddress = true
+            self.addressTF.text = userAddress.address + userAddress.houseNo
+        }
     }
     
     
@@ -71,10 +77,10 @@ class PlaceOrderVC: UIViewController , UITextViewDelegate , Location{
     @IBAction func cashMethodTapped(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            cashBtn[0].setImage(#imageLiteral(resourceName: "button"), for: .normal)
-            cashBtn[1].setImage(#imageLiteral(resourceName: "circle"), for: .normal)
-            cashBtn[2].setImage(#imageLiteral(resourceName: "circle"), for: .normal)
-            cashBtn[3].setImage(#imageLiteral(resourceName: "circle"), for: .normal)
+            cashBtn[0].setImage(#imageLiteral(resourceName: "dot"), for: .normal)
+            cashBtn[1].setImage(#imageLiteral(resourceName: "circle1"), for: .normal)
+            cashBtn[2].setImage(#imageLiteral(resourceName: "circle1"), for: .normal)
+            cashBtn[3].setImage(#imageLiteral(resourceName: "circle1"), for: .normal)
             isSelectCash = "Cash on Delivery"
             
             
@@ -90,10 +96,13 @@ class PlaceOrderVC: UIViewController , UITextViewDelegate , Location{
 //            isSelectCard = 1
             self.showToast(message: "This Method not available")
         case 2:
-            cashBtn[2].setImage(#imageLiteral(resourceName: "button"), for: .normal)
-            cashBtn[1].setImage(#imageLiteral(resourceName: "circle"), for: .normal)
-            cashBtn[0].setImage(#imageLiteral(resourceName: "circle"), for: .normal)
-            cashBtn[3].setImage(#imageLiteral(resourceName: "circle"), for: .normal)
+            
+            
+            
+            cashBtn[2].setImage(#imageLiteral(resourceName: "dot"), for: .normal)
+            cashBtn[1].setImage(#imageLiteral(resourceName: "circle1"), for: .normal)
+            cashBtn[0].setImage(#imageLiteral(resourceName: "circle1"), for: .normal)
+            cashBtn[3].setImage(#imageLiteral(resourceName: "circle1"), for: .normal)
             
             isSelectCash = "Wallet"
             
@@ -225,4 +234,11 @@ extension PlaceOrderVC : UITextFieldDelegate  {
         validation()
     }
     
+}
+
+
+extension String {
+    func toDouble() -> Double  {
+        return Double(self) ?? 0.0
+    }
 }

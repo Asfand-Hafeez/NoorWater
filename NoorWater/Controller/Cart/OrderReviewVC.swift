@@ -71,7 +71,7 @@ class OrderReviewVC: UIViewController {
                         let okAction = UIAlertAction(title: "OK", style: .default) {
                               UIAlertAction in
                             ApiService.instance.cartQuantity.removeAll()
-                            self.popBack(4)
+                            self.popBack(5)
                           }
                          
                           alertController.addAction(okAction)

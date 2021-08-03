@@ -22,6 +22,7 @@ struct UserDetails : Codable{
     var adminType, cityId, creditLimit, areaId: String
     var houseNo, land, street: String
 //    var address: NSNull
+    var customerAddress: UserAddress?
     var customerAddressLat, customerAddressLng, email, trn: String
     var deliveryRequired, customerGrpName: String
 //    var customerGrp: NSNull
@@ -29,4 +30,17 @@ struct UserDetails : Codable{
 
     var contactNos, username, howToKnow, describe: String
     var remove, update, buildingNo: String
+}
+
+
+
+struct UserAddress: Codable {
+    
+    let addressId: String
+    let houseNo: String
+//    let street: String?
+    let address: String
+    let lat: String
+    let lng: String
+    
 }

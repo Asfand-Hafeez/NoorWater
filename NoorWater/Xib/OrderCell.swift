@@ -27,8 +27,9 @@ class OrderCell: UITableViewCell {
         didSet {
             orderNoLbl.text = "Order No. " +  result.orderNum.description
             dateLbl.text = result.orderDateTime
-            orderNameLbl.text = result.products.first!.name  + " * " + result.products.first!.qty.description
-            priceLbl.text =  "AED " + (result.products.first!.price * result.products.first!.qty).description
+            
+//            orderNameLbl.text = result.products.first!.name  + " * " + result.products.first!.qty.description
+////            priceLbl.text =  "AED " + (result.products.first!.price * result.products.first!.qty).description
             addressLbl.text = result.address
         }
     }

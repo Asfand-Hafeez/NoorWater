@@ -145,7 +145,12 @@ class UpdateProfileVC: UIViewController, GetBackDeliveryDays {
         nameTF.text = user.name
         emailTF.text = user.email
         phoneTF.text = user.contactNos
+        
+//        profileImg.sd_setImage(with: URL(string: user.profileImage))
+        
+        if user.profileImage != "" {
         profileImg.sd_setImage(with: URL(string: user.profileImage))
+        }
         customerTypeTF.text = user.customerGrpName
         deliveryDaysTF.text = user.deliveryRequired
 //

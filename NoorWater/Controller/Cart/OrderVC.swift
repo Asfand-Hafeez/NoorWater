@@ -16,7 +16,7 @@ class OrderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let segmentItems = ["All", "Pending","Delivered", "Cancelled"]
+        let segmentItems = [ "Pending","Delivered", "Cancelled","All"]
           segmentControl = UISegmentedControl(items: segmentItems)
         
         segmentControl.addTarget(self, action: #selector(segmentControl(_:)), for: .valueChanged)
@@ -47,34 +47,10 @@ class OrderVC: UIViewController {
 //        setUpNavbar()
         getOrderApiCall(index: 0)
     }
-//    func setUpNavbar() {
-//        let menuTapGesture = UITapGestureRecognizer()
-//        let menuView = UIView(frame: CGRect(x: 0, y:0, width: 60, height:60))
-//        let image = UIImage(named: "burger")
-//        let imageView = UIImageView(image: image!)
-//        imageView.contentMode = .scaleAspectFill
-//            imageView.frame = CGRect(x: -15, y: 0, width: 60, height: 50)
-//        menuView.layer.zPosition = 999
-//        menuView.addSubview(imageView)
-//        let barButtonItem = UIBarButtonItem(customView: menuView)
-//        barButtonItem.action = #selector(menuBtnTapped)
-//        navigationItem.leftBarButtonItem = barButtonItem
-//        menuView.addGestureRecognizer(menuTapGesture)
-//        menuTapGesture.addTarget(self, action: #selector(menuBtnTapped))
-//
-//
-//    }
-//    @IBAction func menuBtnTapped()  {
-//     if let drawerController = navigationController?.parent as? KYDrawerController {
-//                drawerController.setDrawerState(.opened, animated: true)
-//            }
-//     }
-    
-   
+
     
     func cancelOrderApiCall(index: Int)  {
         self.startActivityIndicator()
-        guard let id = ApiService.instance.user else { return  }
         let param  = [
             "module":"status_update_by_customer",
             "from":"app",
@@ -143,34 +119,34 @@ class OrderVC: UIViewController {
                     switch index {
                     case 0:
                         
-                        if jsonPetitions.allOrders.count == 0 {
-                            self.tableView.setEmptyMessage("No Order Availabe")
-                        }else {
-                            self.ordertData = jsonPetitions.allOrders
-                        }
-                    case 1:
-                        
-
                         if jsonPetitions.inProcessOrdersList.count == 0 {
                             self.tableView.setEmptyMessage("No Order Availabe")
                         }else {
                             self.ordertData = jsonPetitions.inProcessOrdersList
                         }
-                    case 2:
-                       if jsonPetitions.deliveredOrdersList.count == 0 {
+                    case 1:
+                        
+
+                        if jsonPetitions.deliveredOrdersList.count == 0 {
                             self.tableView.setEmptyMessage("No Order Availabe")
                         }else {
-                        
                             self.ordertData = jsonPetitions.deliveredOrdersList
                         }
-                        
-                    case 3:
-                        
-                        if jsonPetitions.cancelledOrdersList.count == 0 {
+                    case 2:
+                       if jsonPetitions.cancelledOrdersList.count == 0 {
                             self.tableView.setEmptyMessage("No Order Availabe")
                         }else {
                         
                             self.ordertData = jsonPetitions.cancelledOrdersList
+                        }
+                        
+                    case 3:
+                        
+                        if jsonPetitions.allOrders.count == 0 {
+                            self.tableView.setEmptyMessage("No Order Availabe")
+                        }else {
+                        
+                            self.ordertData = jsonPetitions.allOrders
                         }
                     default:
                         break

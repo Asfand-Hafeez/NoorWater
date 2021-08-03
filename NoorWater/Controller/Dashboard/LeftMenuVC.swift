@@ -30,11 +30,11 @@ class LeftMenuVC: UIViewController {
             SideMenu(name: "Address", icon: #imageLiteral(resourceName: "location")),
             SideMenu(name: "Profile", icon: #imageLiteral(resourceName: "user (1)")),
             SideMenu(name: "Notification", icon: #imageLiteral(resourceName: "bell")),
-            SideMenu(name: "Feedback", icon: #imageLiteral(resourceName: "files")),
-            SideMenu(name: "Rate Us", icon: UIImage(named: "Rate-Us")!),
-            SideMenu(name: "Tell a friend", icon: #imageLiteral(resourceName: "files")),
-            SideMenu(name: "Contact Us", icon: #imageLiteral(resourceName: "files")),
-            SideMenu(name: "Logout", icon: #imageLiteral(resourceName: "ic_next_product")),
+            SideMenu(name: "Feedback", icon: UIImage(named: "feedback")!),
+//            SideMenu(name: "Rate Us", icon: UIImage(named: "Rate-Us")!),
+//            SideMenu(name: "Tell a friend", icon:UIImage(named: "tell")!),
+            SideMenu(name: "Contact Us", icon: UIImage(named: "contactus")!),
+            SideMenu(name: "Logout", icon: UIImage(named: "logout")!),
         ]
         setupData()
     }
@@ -43,8 +43,9 @@ class LeftMenuVC: UIViewController {
     func setupData () {
         guard let user = ApiService.instance.user else { return  }
         nameLbl.text = user.name
+        if user.profileImage != "" {
         profileImg.sd_setImage(with: URL(string: user.profileImage))
-        
+        }
     }
   
 

@@ -421,8 +421,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-oE-TIb">
-                                <rect key="frame" x="20" y="64" width="120" height="120"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asas" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-oE-TIb">
+                                <rect key="frame" x="40" y="64" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="V1T-3W-oJY"/>
                                     <constraint firstAttribute="height" constant="120" id="a1o-Wl-NGV"/>
@@ -440,7 +440,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talha Saleem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV6-dW-Mzk">
-                                <rect key="frame" x="16.5" y="194" width="127.5" height="23"/>
+                                <rect key="frame" x="36.5" y="194" width="127.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -494,7 +494,7 @@
                         <constraints>
                             <constraint firstItem="tV6-dW-Mzk" firstAttribute="top" secondItem="fK1-oE-TIb" secondAttribute="bottom" constant="10" id="1Ka-sf-Vzt"/>
                             <constraint firstItem="fK1-oE-TIb" firstAttribute="top" secondItem="Adg-Xq-UDU" secondAttribute="top" constant="20" id="6bK-4B-FDK"/>
-                            <constraint firstItem="fK1-oE-TIb" firstAttribute="leading" secondItem="Adg-Xq-UDU" secondAttribute="leading" constant="20" id="BqQ-QU-fMx"/>
+                            <constraint firstItem="fK1-oE-TIb" firstAttribute="leading" secondItem="Adg-Xq-UDU" secondAttribute="leading" constant="40" id="BqQ-QU-fMx"/>
                             <constraint firstItem="ltH-Tz-8LP" firstAttribute="leading" secondItem="Adg-Xq-UDU" secondAttribute="leading" id="QNY-in-TyV"/>
                             <constraint firstItem="Adg-Xq-UDU" firstAttribute="trailing" secondItem="ltH-Tz-8LP" secondAttribute="trailing" id="V6L-ob-kW9"/>
                             <constraint firstItem="ltH-Tz-8LP" firstAttribute="top" secondItem="tV6-dW-Mzk" secondAttribute="bottom" id="kGw-mj-pdL"/>
@@ -526,7 +526,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0Z-bb-cr0">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1142.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-xr-0Ey">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asas" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-xr-0Ey">
                                                 <rect key="frame" x="147" y="50" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="gb2-Oi-1YF"/>
@@ -2123,7 +2123,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="ReOrderBtnTapped:" destination="AnH-Ak-R15" eventType="touchUpInside" id="Kf5-az-4QY"/>
-                                                    <action selector="addBtnTapped:" destination="oWH-d1-HA9" eventType="touchUpInside" id="Luk-GU-SrO"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="G5m-BM-oKI">
@@ -2407,6 +2406,9 @@
                                                         <state key="normal" title="Chat">
                                                             <color key="titleColor" systemColor="systemRedColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="chatBtnTapped:" destination="AnH-Ak-R15" eventType="touchUpInside" id="yxF-pu-qvj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.90980392160000001" green="0.72156862749999995" blue="0.15686274510000001" alpha="0.4149994104086947" colorSpace="calibratedRGB"/>
@@ -2430,6 +2432,7 @@
                                             <constraint firstItem="G5m-BM-oKI" firstAttribute="top" secondItem="IPn-EH-e0P" secondAttribute="top" constant="40" id="6a2-rw-Y0N"/>
                                             <constraint firstAttribute="trailing" secondItem="7uG-Ez-7yb" secondAttribute="trailing" constant="30" id="8TX-1v-ZRl"/>
                                             <constraint firstItem="G5m-BM-oKI" firstAttribute="leading" secondItem="IPn-EH-e0P" secondAttribute="leading" constant="20" id="J3x-gN-Aln"/>
+                                            <constraint firstAttribute="bottom" secondItem="7uG-Ez-7yb" secondAttribute="bottom" constant="54" id="Kcc-Pj-Q4C"/>
                                             <constraint firstItem="7uG-Ez-7yb" firstAttribute="leading" secondItem="IPn-EH-e0P" secondAttribute="leading" constant="30" id="QjG-Re-rXA"/>
                                             <constraint firstItem="1ji-aE-QIw" firstAttribute="leading" secondItem="IPn-EH-e0P" secondAttribute="leading" constant="40" id="SXy-Au-FPD"/>
                                             <constraint firstAttribute="trailing" secondItem="G5m-BM-oKI" secondAttribute="trailing" constant="20" id="eS0-0K-Qbx"/>
@@ -2470,6 +2473,7 @@
                         <outlet property="cashType" destination="Wu0-Bc-f21" id="biX-4S-V6W"/>
                         <outlet property="dateLbl" destination="gX7-eZ-g6E" id="Ket-Iu-Bl0"/>
                         <outlet property="discountLbl" destination="wnG-NH-39q" id="ATv-eS-3bR"/>
+                        <outlet property="orderBtn" destination="7uG-Ez-7yb" id="E18-Pk-JPn"/>
                         <outlet property="orderNoLbl" destination="hCE-6T-dBx" id="LlV-j9-ny8"/>
                         <outlet property="orderStatus" destination="Cxm-iN-Eyc" id="cB3-z4-vBg"/>
                         <outlet property="paid" destination="iIo-xt-PMF" id="M76-wo-uKA"/>
@@ -3182,7 +3186,7 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nQO-9i-46p">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="178" height="40"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="WaF-Fi-qNx">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cash" translatesAutoresizingMaskIntoConstraints="NO" id="WaF-Fi-qNx">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="40" id="DaH-d6-dGd"/>
@@ -3198,8 +3202,11 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdR-e7-SZd">
-                                                                                <rect key="frame" x="322" y="0.0" width="32" height="40"/>
-                                                                                <state key="normal" image="circle"/>
+                                                                                <rect key="frame" x="314" y="0.0" width="40" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="40" id="rJ8-jj-xxg"/>
+                                                                                </constraints>
+                                                                                <state key="normal" image="circle1"/>
                                                                                 <connections>
                                                                                     <action selector="cashMethodTapped:" destination="7Kd-Y6-Nly" eventType="touchUpInside" id="l7r-UQ-kJM"/>
                                                                                 </connections>
@@ -3212,7 +3219,7 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aer-CK-RFR">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="96.5" height="40"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="tuZ-mC-e12">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit" translatesAutoresizingMaskIntoConstraints="NO" id="tuZ-mC-e12">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="30" id="4OJ-XE-U1n"/>
@@ -3228,8 +3235,11 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXZ-bH-uWq">
-                                                                                <rect key="frame" x="322" y="0.0" width="32" height="40"/>
-                                                                                <state key="normal" image="circle"/>
+                                                                                <rect key="frame" x="314" y="0.0" width="40" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="40" id="Ndw-7l-SSN"/>
+                                                                                </constraints>
+                                                                                <state key="normal" image="circle1"/>
                                                                                 <connections>
                                                                                     <action selector="cashMethodTapped:" destination="7Kd-Y6-Nly" eventType="touchUpInside" id="TJx-3l-f5U"/>
                                                                                 </connections>
@@ -3258,8 +3268,11 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvl-ap-Thm">
-                                                                                <rect key="frame" x="322" y="0.0" width="32" height="40"/>
-                                                                                <state key="normal" image="circle"/>
+                                                                                <rect key="frame" x="314" y="0.0" width="40" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="40" id="CPE-HB-y0p"/>
+                                                                                </constraints>
+                                                                                <state key="normal" image="circle1"/>
                                                                                 <connections>
                                                                                     <action selector="cashMethodTapped:" destination="7Kd-Y6-Nly" eventType="touchUpInside" id="yEi-UE-8c5"/>
                                                                                 </connections>
@@ -3272,7 +3285,7 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N3J-1f-d1A">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="137.5" height="40"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="4lU-gy-2MY">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit-card" translatesAutoresizingMaskIntoConstraints="NO" id="4lU-gy-2MY">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="30" id="F6f-19-qbD"/>
@@ -3288,8 +3301,11 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvz-IB-V6A">
-                                                                                <rect key="frame" x="322" y="0.0" width="32" height="40"/>
-                                                                                <state key="normal" image="circle"/>
+                                                                                <rect key="frame" x="314" y="0.0" width="40" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="40" id="PjA-63-F7j"/>
+                                                                                </constraints>
+                                                                                <state key="normal" image="circle1"/>
                                                                                 <connections>
                                                                                     <action selector="cashMethodTapped:" destination="7Kd-Y6-Nly" eventType="touchUpInside" id="uYT-Kk-xgl"/>
                                                                                 </connections>
@@ -3392,17 +3408,20 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cash" width="511" height="512"/>
         <image name="Minus-32x32" width="32" height="32"/>
         <image name="Review-order-32x32" width="32" height="32"/>
+        <image name="asas" width="397" height="400"/>
         <image name="building-32x32" width="32" height="32"/>
         <image name="calendar" width="511" height="512"/>
         <image name="call_us_contact" width="211" height="176"/>
         <image name="camera1" width="16" height="16"/>
-        <image name="circle" width="32" height="32"/>
+        <image name="circle1" width="48" height="52"/>
         <image name="city" width="511" height="512"/>
+        <image name="credit" width="512" height="512"/>
+        <image name="credit-card" width="512" height="512"/>
         <image name="email_contact" width="214" height="181"/>
         <image name="home" width="511" height="512"/>
-        <image name="images" width="186" height="271"/>
         <image name="logo" width="511" height="512"/>
         <image name="more" width="511" height="512"/>
         <image name="offer" width="706" height="372"/>

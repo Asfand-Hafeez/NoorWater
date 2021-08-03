@@ -40,8 +40,15 @@ class SignUpVC: UIViewController, Location {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         changeLocationView.addGestureRecognizer(tap)
         
+        
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.navigationBar.isHidden = false
         let vc = DropPinVC.instantiate(type: .Profile) as! DropPinVC
         vc.location = self
         pushVC(vc)
