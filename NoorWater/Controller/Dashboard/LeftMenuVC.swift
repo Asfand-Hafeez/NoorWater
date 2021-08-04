@@ -23,6 +23,7 @@ class LeftMenuVC: UIViewController {
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.separatorColor = .clear
+        
         sideMenu = [
             SideMenu(name: "Home", icon: #imageLiteral(resourceName: "home (2)")),
             SideMenu(name: "Orders", icon: #imageLiteral(resourceName: "shopping-bag")),

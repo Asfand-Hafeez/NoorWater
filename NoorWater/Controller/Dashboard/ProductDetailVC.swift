@@ -46,15 +46,23 @@ class ProductDetailVC: UIViewController {
     }
     
     @IBAction func addTocartBtnTapped(_ sender: Any) {
-        if quantiy == 0 {
-            self.showAlertWith(text: "Please add Quantity for Order")
-        }else {
-            guard let product = product else {
-                return
+       
+        
+        
+        if ApiService.instance.user != nil {
+            if quantiy == 0 {
+                self.showAlertWith(text: "Please add Quantity for Order")
+            }else {
+                guard let product = product else {
+                    return
+                }
+                ApiService.instance.cartQuantity.append(CartQuantity(cart: product, quantity: quantiy))
+                self.navigationController?.popViewController(animated: true)
             }
-            ApiService.instance.cartQuantity.append(CartQuantity(cart: product, quantity: quantiy))
-            self.navigationController?.popViewController(animated: true)
+        }else{
+            ApiService.instance.setLoginRootVC()
         }
+        
         
 //        if ApiService.instance.cartQuantity.count != 0  {
 //            for (index, element) in ApiService.instance.cartQuantity.enumerated() {
@@ -82,18 +90,25 @@ class ProductDetailVC: UIViewController {
         
     }
     @IBAction func buyBtnTapped(_ sender: Any) {
-        if quantiy == 0 {
-            self.showAlertWith(text: "Please add Quantity for Order")
-        }else {
-            guard let product = product else {
-                return
+        
+        if ApiService.instance.user != nil {
+            if quantiy == 0 {
+                self.showAlertWith(text: "Please add Quantity for Order")
+            }else {
+                guard let product = product else {
+                    return
+                }
+                ApiService.instance.cartQuantity.append(CartQuantity(cart: product, quantity: quantiy))
+                
+                let vc  = ShoppingCartVC.instantiate(type: .main)
+                pushVC(vc)
             }
-            ApiService.instance.cartQuantity.append(CartQuantity(cart: product, quantity: quantiy))
             
-            let vc  = ShoppingCartVC.instantiate(type: .main)
-            pushVC(vc)
+        }else{
+            ApiService.instance.setLoginRootVC()
         }
         
+      
         
         
     }

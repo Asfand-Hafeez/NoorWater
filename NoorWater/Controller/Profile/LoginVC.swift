@@ -7,7 +7,7 @@
 
 import UIKit
 import Alamofire
-
+import KYDrawerController
 class LoginVC: UIViewController {
 
     @IBOutlet weak var emailTF: UITextField!
@@ -15,6 +15,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var signBtn: UIButton!
     var isValidEmail = false
     var isValidPass = false
+    let drawerController     = KYDrawerController(drawerDirection: .left, drawerWidth: 300)
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -79,6 +80,9 @@ class LoginVC: UIViewController {
         }
        
 
+    }
+    @IBAction func skipBtnTapped(_ sender: Any) {
+        ApiService.instance.setDashBoardRootVC()
     }
     @IBAction func textFieldChange(_ sender: UITextField) {
         switch sender {

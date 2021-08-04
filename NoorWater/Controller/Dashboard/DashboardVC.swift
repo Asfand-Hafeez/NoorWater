@@ -38,8 +38,12 @@ class DashboardVC: UIViewController, PushViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       title = ApiService.instance.user!.name
+        if let user = ApiService.instance.user {
+            title = user.name
+        }else {
+            title = ""
+        }
+       
         transparentNavBar()
         
         setBannerUpCollectionView()
@@ -49,17 +53,24 @@ class DashboardVC: UIViewController, PushViewDelegate {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+       
         setUpNavbar()
         
     }
     
     func getProductApiCall()  {
         self.startActivityIndicator()
-        guard let id = ApiService.instance.user else { return  }
+        var user_id = "0"
+        if let userid = ApiService.instance.user?.id {
+            user_id = userid
+        }else {
+            user_id = "0"
+        }
         let param  = [
             "module":"get_products",
             "from":"app",
-            "user_id":id.id
+            "user_id":user_id
         ] as [String: Any]
         
         AF.request( "\(BASE_URL)process", method: .post, parameters: param).response { response in
@@ -94,7 +105,7 @@ class DashboardVC: UIViewController, PushViewDelegate {
                     self.topOfferCV.reloadData()
                     
                 } catch let err {
-                    print(err.localizedDescription)
+                    self.showAlert(text: err.localizedDescription)
                 }
                 self.stopActivityIndicator()
                 
@@ -131,8 +142,9 @@ class DashboardVC: UIViewController, PushViewDelegate {
         
         bellBtn.imageView?.contentMode = .scaleAspectFit
         
+        if ApiService.instance.user != nil {
         self.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: nofityBtn),UIBarButtonItem(customView: bellBtn)]
-        
+        }
         menuView.layer.zPosition = 999
         menuView.addSubview(imageView)
         let barButtonItem = UIBarButtonItem(customView: menuView)
@@ -146,13 +158,19 @@ class DashboardVC: UIViewController, PushViewDelegate {
         
     }
    @IBAction func menuBtnTapped()  {
-    if let drawerController = navigationController?.parent as? KYDrawerController {
-               drawerController.setDrawerState(.opened, animated: true)
-           }
+    if let _ = ApiService.instance.user {
+        if let drawerController = navigationController?.parent as? KYDrawerController {
+                   drawerController.setDrawerState(.opened, animated: true)
+               }
+    }else {
+        ApiService.instance.setLoginRootVC()
+    }
+   
     }
 
     
     @IBAction func bellBtnTapped()  {
+        
         let vc  = NotificationVC.instantiate(type: .main)
         pushVC(vc)
      }
@@ -200,6 +218,7 @@ class DashboardVC: UIViewController, PushViewDelegate {
         case 8:
             
             ApiService.instance.resetDefaults()
+            ApiService.instance.user = nil
             ApiService.instance.setLoginRootVC()
             
         default:

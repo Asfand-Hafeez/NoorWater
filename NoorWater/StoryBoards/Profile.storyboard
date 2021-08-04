@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="h21-AL-MY0">
-                                <rect key="frame" x="25" y="124" width="364" height="422.5"/>
+                                <rect key="frame" x="25" y="124" width="364" height="477.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Iy5-gf-vo9">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="66.5"/>
@@ -261,7 +261,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="n5h-FO-XY6">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="n5h-FO-XY6">
                                         <rect key="frame" x="0.0" y="392.5" width="364" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jA9-G1-Q9T">
@@ -284,6 +284,21 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yoR-bk-kwf">
+                                        <rect key="frame" x="0.0" y="447.5" width="364" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0S-Sq-uVb">
+                                                <rect key="frame" x="146" y="0.0" width="72" height="30"/>
+                                                <state key="normal" title="Skip Login">
+                                                    <color key="titleColor" red="0.37647058820000001" green="0.67449265140000003" blue="0.2295488772" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registerBtnTapped:" destination="QtO-tX-oAn" eventType="touchUpInside" id="hgF-Qu-e7z"/>
+                                                    <action selector="skipBtnTapped:" destination="QtO-tX-oAn" eventType="touchUpInside" id="5OZ-8C-hNY"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>

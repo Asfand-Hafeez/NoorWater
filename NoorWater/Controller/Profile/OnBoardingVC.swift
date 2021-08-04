@@ -40,11 +40,11 @@ class OnBoardingVC: UIViewController {
         collectionView.isPagingEnabled = true
     }
    @IBAction func skipBtnTapped()  {
-    if let user = ApiService.instance.user {
+//    if let user = ApiService.instance.user {
         ApiService.instance.setDashBoardRootVC()
-    }else {
-        ApiService.instance.setLoginRootVC()
-    }
+//    }else {
+//        ApiService.instance.setLoginRootVC()
+//    }
     
     }
 }
