@@ -31,6 +31,16 @@ class OrderCell: UITableViewCell {
 //            orderNameLbl.text = result.products.first!.name  + " * " + result.products.first!.qty.description
 ////            priceLbl.text =  "AED " + (result.products.first!.price * result.products.first!.qty).description
             addressLbl.text = result.address
+            
+            if result.orderStatus == "pending" {
+                cancelBtn.setTitle("Cancel", for: .normal)
+                
+            } else if result.orderStatus == "deliver" {
+                cancelBtn.setTitle("Reorder", for: .normal)
+            } else if result.orderStatus == "cancel" {
+                cancelBtn.setTitle("Restore", for: .normal)
+            }
+            
         }
     }
     override func setSelected(_ selected: Bool, animated: Bool) {

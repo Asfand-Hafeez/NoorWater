@@ -26,6 +26,7 @@ struct DeliveredOrdersList : Codable {
     var paymentMethod, lat, lng: String
     var dsicount, customerId , orderNum: Int
     var paid: Double
+    var orderStatus: String
 }
 // MARK: - Product
 struct Product : Codable{

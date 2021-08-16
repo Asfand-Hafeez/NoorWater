@@ -41,6 +41,8 @@ class OnBoardingVC: UIViewController {
     }
    @IBAction func skipBtnTapped()  {
 //    if let user = ApiService.instance.user {
+    
+    ApiService.instance.isSplashSeen(value: true)
         ApiService.instance.setDashBoardRootVC()
 //    }else {
 //        ApiService.instance.setLoginRootVC()

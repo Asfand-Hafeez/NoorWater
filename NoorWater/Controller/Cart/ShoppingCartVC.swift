@@ -40,6 +40,9 @@ class ShoppingCartVC: UIViewController {
         
         clearView()
     }
+    @IBAction func clearShopBtnTapped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     func clearView()  {
         if ApiService.instance.cartQuantity.count == 0 {

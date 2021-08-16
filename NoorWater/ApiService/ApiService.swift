@@ -62,7 +62,11 @@ class ApiService {
     }
     func resetDefaults() {
         let dictionary = defaults.dictionaryRepresentation()
+        
         dictionary.keys.forEach { key in
+            if key == "isSplashSeen" {
+               return
+            }
             defaults.removeObject(forKey: key)
         }
     }
@@ -72,6 +76,14 @@ class ApiService {
             window.rootViewController = UINavigationController(rootViewController: LoginVC.instantiate(type: .Profile))
             window.makeKeyAndVisible()
         }
+    }
+    
+    func isSplashSeen(value : Bool)  {
+        defaults.setValue(value, forKey: "isSplashSeen")
+    }
+    
+    func getIsSplashSeen() -> Bool  {
+        return defaults.bool(forKey: "isSplashSeen")
     }
     
     

@@ -62,18 +62,11 @@ class OrderDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         for product in order.products {
             totalPric += product.price
         }
-        
-//        HELLO
-        // ASFAND
-        
-        
-        
-        
-        
-        
         totalPrice.text = "AED " + totalPric.description
         total.text = "AED " + totalPric.description
         balanceDue.text =  "AED " + totalPric.description
+        
+       
     }
     
 

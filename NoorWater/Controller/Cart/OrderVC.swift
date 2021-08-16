@@ -15,13 +15,13 @@ class OrderVC: UIViewController {
     var tabOrder = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let segmentItems = [ "Pending","Delivered", "Cancelled","All"]
-          segmentControl = UISegmentedControl(items: segmentItems)
+        segmentControl = UISegmentedControl(items: segmentItems)
         
         segmentControl.addTarget(self, action: #selector(segmentControl(_:)), for: .valueChanged)
         segmentControl.selectedSegmentIndex = 0
-          view.addSubview(segmentControl)
+        view.addSubview(segmentControl)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         segmentControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)
@@ -44,10 +44,10 @@ class OrderVC: UIViewController {
         tableView.register(UINib(nibName: "OrderCell", bundle: nil), forCellReuseIdentifier: "cell")
         title = "My Orders"
         // Do any additional setup after loading the view.
-//        setUpNavbar()
+        //        setUpNavbar()
         getOrderApiCall(index: 0)
     }
-
+    
     
     func cancelOrderApiCall(index: Int)  {
         self.startActivityIndicator()
@@ -64,7 +64,7 @@ class OrderVC: UIViewController {
             debugPrint(response)
             if let data = response.data{
                 print(data.prettyPrintedJSONString ?? "no data")
-                                
+                
                 do {
                     
                     
@@ -91,8 +91,8 @@ class OrderVC: UIViewController {
             }
             
         }
-       
-
+        
+        
     }
     
     func getOrderApiCall(index: Int)  {
@@ -109,7 +109,7 @@ class OrderVC: UIViewController {
             debugPrint(response)
             if let data = response.data{
                 print(data.prettyPrintedJSONString ?? "no data")
-                                
+                
                 do {
                     
                     
@@ -126,17 +126,17 @@ class OrderVC: UIViewController {
                         }
                     case 1:
                         
-
+                        
                         if jsonPetitions.deliveredOrdersList.count == 0 {
                             self.tableView.setEmptyMessage("No Order Availabe")
                         }else {
                             self.ordertData = jsonPetitions.deliveredOrdersList
                         }
                     case 2:
-                       if jsonPetitions.cancelledOrdersList.count == 0 {
+                        if jsonPetitions.cancelledOrdersList.count == 0 {
                             self.tableView.setEmptyMessage("No Order Availabe")
                         }else {
-                        
+                            
                             self.ordertData = jsonPetitions.cancelledOrdersList
                         }
                         
@@ -145,7 +145,7 @@ class OrderVC: UIViewController {
                         if jsonPetitions.allOrders.count == 0 {
                             self.tableView.setEmptyMessage("No Order Availabe")
                         }else {
-                        
+                            
                             self.ordertData = jsonPetitions.allOrders
                         }
                     default:
@@ -162,30 +162,30 @@ class OrderVC: UIViewController {
             }
             
         }
-       
-
+        
+        
     }
     
     @objc func segmentControl(_ segmentedControl: UISegmentedControl) {
-       switch (segmentedControl.selectedSegmentIndex) {
-          case 0:
-             print("First")
-           getOrderApiCall(index: 0)
+        switch (segmentedControl.selectedSegmentIndex) {
+        case 0:
+            print("First")
+            getOrderApiCall(index: 0)
             tabOrder = 0
-          case 1:
-           getOrderApiCall(index: 1)
+        case 1:
+            getOrderApiCall(index: 1)
             tabOrder = 1
-       case 2:
-           getOrderApiCall(index: 2)
-        tabOrder = 2
-       case 3:
-           getOrderApiCall(index: 3)
-        tabOrder = 3
-          default:
-          break
-       }
+        case 2:
+            getOrderApiCall(index: 2)
+            tabOrder = 2
+        case 3:
+            getOrderApiCall(index: 3)
+            tabOrder = 3
+        default:
+            break
+        }
     }
-
+    
 }
 
 
@@ -216,16 +216,33 @@ extension OrderVC : UITableViewDelegate, UITableViewDataSource {
     
     @objc func CancelBtnTapped(sender: UIButton) {
         
+        if ordertData[sender.tag].orderStatus == "pending" {
+            cancelOrderApiCall(index: sender.tag)
+            
+        } else if ordertData[sender.tag].orderStatus == "deliver"  || ordertData[sender.tag].orderStatus == "cancel"{
+            
+            let product = ordertData[sender.tag].products
+            
+            
+            for (i,v) in product.enumerated() {
+                ApiService.instance.cartQuantity.append(CartQuantity(cart: ResultData(id: i.description, productId: v.id.description, name: v.name, price: v.price.description, unit: "0", image: v.image), quantity: v.qty))
+            }
+            
+            
+            //
+            let vc  = ShoppingCartVC.instantiate(type: .main)
+            pushVC(vc)
+            
+        }
         
-        cancelOrderApiCall(index: sender.tag)
         
     }
     
     
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 100
-//    }
+    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    //        return 100
+    //    }
     
     
 }

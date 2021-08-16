@@ -13,8 +13,17 @@ class LaunchVC: UIViewController {
         super.viewDidLoad()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             if let window = UIApplication.shared.windows.first{
-                window.rootViewController =  OnBoardingVC.instantiate(type: .Profile)
-                window.makeKeyAndVisible()
+                if ApiService.instance.getIsSplashSeen() == true {
+                    
+                    
+                    ApiService.instance.updateUserInApiService()
+                    ApiService.instance.setDashBoardRootVC()
+                }else {
+                    
+                    window.rootViewController =  OnBoardingVC.instantiate(type: .Profile)
+                    window.makeKeyAndVisible()
+                }
+                
             }
             
         }

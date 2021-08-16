@@ -39,6 +39,7 @@ class DashboardVC: UIViewController, PushViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let user = ApiService.instance.user {
+            
             title = user.name
         }else {
             title = ""

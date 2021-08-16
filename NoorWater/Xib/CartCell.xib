@@ -19,16 +19,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVF-84-erU">
-                        <rect key="frame" x="5" y="5" width="346" height="84"/>
+                        <rect key="frame" x="5" y="10" width="341" height="79"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="DRb-ds-BDL">
-                                <rect key="frame" x="5" y="5" width="80" height="74"/>
+                                <rect key="frame" x="5" y="5" width="80" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="SCe-jd-EVB"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-Qf-EQd">
-                                <rect key="frame" x="100" y="16" width="181.5" height="52.5"/>
+                                <rect key="frame" x="100" y="13.5" width="181.5" height="52.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallter Bottle 5 Gallon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-u0-ahY">
                                         <rect key="frame" x="0.0" y="0.0" width="181.5" height="20.5"/>
@@ -94,11 +94,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RP1-iQ-QF8">
-                        <rect key="frame" x="321" y="0.0" width="35" height="35"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="35" id="9bV-tQ-7fp"/>
-                            <constraint firstAttribute="width" constant="35" id="CMM-Z2-J87"/>
-                        </constraints>
+                        <rect key="frame" x="324" y="0.0" width="32" height="32"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="close">
                             <color key="titleColor" systemColor="systemRedColor"/>
@@ -115,11 +111,11 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="ZVF-84-erU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="11V-ho-XFF"/>
+                    <constraint firstItem="ZVF-84-erU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="11V-ho-XFF"/>
                     <constraint firstAttribute="bottom" secondItem="ZVF-84-erU" secondAttribute="bottom" constant="5" id="LyR-bi-5lR"/>
                     <constraint firstItem="ZVF-84-erU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="bef-4o-GL9"/>
                     <constraint firstItem="RP1-iQ-QF8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rgA-Wb-eIf"/>
-                    <constraint firstAttribute="trailing" secondItem="ZVF-84-erU" secondAttribute="trailing" constant="5" id="yKP-GO-nNC"/>
+                    <constraint firstAttribute="trailing" secondItem="ZVF-84-erU" secondAttribute="trailing" constant="10" id="yKP-GO-nNC"/>
                     <constraint firstAttribute="trailing" secondItem="RP1-iQ-QF8" secondAttribute="trailing" id="zD8-KF-em5"/>
                 </constraints>
             </tableViewCellContentView>
